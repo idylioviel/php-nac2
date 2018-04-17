@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hind;
+}
+
+.questao {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.questao h1 {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #E6E6E6;
+    border-radius: 50%;
+    margin: auto auto 10px;
+}
+
+.questao form label {
+    display: block;
+    text-align: left;
+}
+
+.questao form input[type=text] {
+    width: 100%;
+    height: 30px;
+}
+
+.questao form input[type=submit] {
+    height: 30px;
+    background: #0099ff;
+    border: none;
+    padding: 0 10px;
+    color: #FFF;
+    margin-top: 5px;
+}
+
+.resultado {
+    width: 500px;
+    min-height: 50px;
+    border: 1px solid #E6E6E6;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
+}
+
+.resultado::before {
+    content: "Resultado";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    display: block;
+    color: #000;
+    font-size: 11px;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+}
+
+.column {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #E6E6E6;
+}
+
+.column p {
+    height: 30px;
+    padding-top: 8px;
+    font-size: 14px;
+}

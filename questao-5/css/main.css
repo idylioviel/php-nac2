@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hind;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrap {
+    max-width: 570px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background: #e6e6e6;
+}
+
+ul {
+    max-width: 570px;
+    margin: 50px auto;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    width: 24%;
+    height: 40px;
+    border: 1px solid #666666;
+    position: relative;
+}
+
+ul li:hover {
+    background: #e6e6e6;
+}
+
+ul li a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form input[type=text] {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #66666;
+    padding-left: 15px;
+}
+
+.form label {
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+    font-size: 12px;
+    transition: all .5s;
+}
+
+.form input[type=text]:focus + label, .form input[type=text]:visited + label {
+    bottom: 60px;
+}
+
+.form input[type=submit] {
+    width: 30%;
+    background: green;
+    height: 35px;
+    color: #FFF;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form select {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.show-users {
+    width: 100%;
+}
+
+.show-users ul li {
+    display: block;
+    border: none;
+    text-transform: inherit;
+    height: auto;
+    width: auto;
+    text-align: left;
+}
+
+.show-users ul li:hover {
+    background: transparent;
+}
+
+.show-users ul li:before {
+    content: "\f101";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.show-users h1 {
+    text-align: center;
+    font-weight: 300;
+    color: #a14a14;
+}
